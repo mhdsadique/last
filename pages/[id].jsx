@@ -11,7 +11,6 @@ import React from 'react'
   </>
   )
 }
-
 export const getStaticPaths=async()=>{
   const res=await fetch(`https://vercel-deploy-jade-one.vercel.app/todo`)
   let data=await res.json()
@@ -20,7 +19,6 @@ export const getStaticPaths=async()=>{
     fallback:false
   }
 }
-
 export const  getStaticProps=async(context)=>{
   const {params:{id}}=context
   const res=await fetch(`https://vercel-deploy-jade-one.vercel.app/todo/${id}`)

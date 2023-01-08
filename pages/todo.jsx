@@ -1,7 +1,6 @@
 import { Button, Center, Heading } from '@chakra-ui/react'
 import React from 'react'
 import Head from 'next/head'
-
 import { useRouter } from 'next/router'
  const Todo = ({post}) => {
     const router=useRouter()
@@ -17,7 +16,6 @@ import { useRouter } from 'next/router'
     <main>
         <Center flexDirection={'column'}>
         {
-
     post.map((blog)=>(<div key={blog.id}>
    <Button bg='orange'  onClick={()=>handleClick(blog.id)} >{blog.title}</Button>
         </div>  ))  

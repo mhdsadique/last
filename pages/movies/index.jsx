@@ -30,8 +30,6 @@ const Moviepage = ({movie}) => {
     </>
     )
   }
-
-
 export const  getServerSideProps=async()=>{
     let response=await fetch(`https://vercel-deploy-jade-one.vercel.app/movies`)
     let data=await response.json()
