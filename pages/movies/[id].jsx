@@ -31,6 +31,4 @@ const sigleMovie = ({movie}) => {
             }
         }
     }
-    
-
 export default sigleMovie
